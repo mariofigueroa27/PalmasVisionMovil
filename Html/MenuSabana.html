@@ -1,0 +1,559 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Palmas Vision Movil</title>
+    <link rel="stylesheet" href="https://palmasvision360movil.azurewebsites.net/Css\MenuSabana.css">
+</head>
+
+<body style="
+background-image: url('https://palmasvision360movil.azurewebsites.net/Img/Imagenes de fondo/2.jpg');
+display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    max-height: 650px;
+    height: 640px;
+    max-width: 360px;
+">
+    <div class="loading-overlay">
+        <div class="loading-image">
+            <img src="https://palmasvision360movil.azurewebsites.net/Img/Logos PNG/Logo Grupo Palmas-03.png" />
+        </div>
+    </div>
+    <header>
+        <div class="menu-toggle">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+        </div>
+        <div class="mobile-menu">
+            <div class="mobile-item-container">
+                <div class="mobile-item">
+                    <a href="https://palmasvision360movil.azurewebsites.net/Html\MenuReporte.html">REPORTES</a>
+                </div>
+
+                <div class="mobile-item">
+                    <a href="https://palmasvision360movil.azurewebsites.net/Html\MenuSabana.html">SABANA</a>
+                </div>
+            </div>
+        </div>
+        <div id="logoContainer">
+            <img src="https://palmasvision360movil.azurewebsites.net/Img\Logos PNG\Logo Grupo Palmas-03.png"
+                alt="Logo Grupo Palmas">
+        </div>
+    </header>
+    <div id="imgReporte">
+        <img src="https://palmasvision360movil.azurewebsites.net/Img\Carrusel\2.png">
+    </div>
+    <div class="column-container">
+        <div class="report-title-container">
+            <h1>SABANAS</h1>
+        </div>
+        <div class="upstream-container closed">
+            <h2 onclick="toggleSubMenu('upstream', 'downstream')">Upstream</h2>
+
+            <div class="menu-container">
+                <!-- Contenido de Upstream -->
+
+                <div class="menu-item" onclick="toggleTable(this)">
+                    <div class="menu-dropdown">
+                        <a>AGRO</a>
+                    </div>
+                </div>
+                <div class="custom-table">
+                    <table>
+                        <tr>
+                            <td>
+                                <a href="https://qliksense.gruporomero.com.pe/azure/sense/app/5ce9ac97-7e01-4f6e-acbc-e02beb03fc46/overview"
+                                    target="_blank">
+                                    Produccion
+                                </a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <a href="https://qliksense.gruporomero.com.pe/azure/sense/app/5ce9ac97-7e01-4f6e-acbc-e02beb03fc46/overview"
+                                    target="_blank">
+                                    Productividad
+                                </a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <a href="https://qliksense.gruporomero.com.pe/azure/sense/app/5ce9ac97-7e01-4f6e-acbc-e02beb03fc46/overview"
+                                    target="_blank">
+                                    Mano de Obra
+
+                                </a>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>
+                                <a href="https://qliksense.gruporomero.com.pe/azure/sense/app/5ce9ac97-7e01-4f6e-acbc-e02beb03fc46/overview"
+                                    target="_blank">
+                                    Clima
+
+                                </a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <a href="https://qliksense.gruporomero.com.pe/azure/sense/app/5ce9ac97-7e01-4f6e-acbc-e02beb03fc46/overview"
+                                    target="_blank">
+                                    BPA
+                                </a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <a href="https://qliksense.gruporomero.com.pe/azure/sense/app/5ce9ac97-7e01-4f6e-acbc-e02beb03fc46/overview"
+                                    target="_blank">
+                                    Avance Labores
+                                </a>
+                            </td>
+
+                        </tr>
+
+                        <tr>
+                            <td>
+                                <a href="https://qliksense.gruporomero.com.pe/azure/sense/app/5ce9ac97-7e01-4f6e-acbc-e02beb03fc46/overview"
+                                    target="_blank">
+                                    Rendimiento Equipos
+                                </a>
+                            </td>
+
+                        </tr>
+                        <tr>
+                            <td>
+                                <a href="https://qliksense.gruporomero.com.pe/azure/sense/app/5ce9ac97-7e01-4f6e-acbc-e02beb03fc46/overview"
+                                    target="_blank">
+                                    Nutricion
+                                </a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <a href="https://qliksense.gruporomero.com.pe/azure/sense/app/5ce9ac97-7e01-4f6e-acbc-e02beb03fc46/overview"
+                                    target="_blank">
+                                    Sanidad Vegetal
+                                </a>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="menu-item" onclick="toggleSubMenuPWSH(this)">
+                    <div class="menu-dropdown">
+                        <a>ATC</a>
+                    </div>
+                </div>
+                <div class="submenu-item" id="palmawasi" style="display: none" onclick="toggleTable(this)">
+                    <div class="menu-dropdown">
+                        <a>Palmawasi</a>
+                    </div>
+                </div>
+                <div class="custom-table">
+                    <table>
+                        <!--PALMAWASI-->
+                        <tr>
+                            <td>
+                                <a href="https://qliksense.gruporomero.com.pe/azure/sense/app/f1bb0574-3ac6-42a9-8f32-6747834dadc4/sheet/5e13b9b2-3388-47d5-8fda-c51e805af317/state/analysis"
+                                    target="_blank">
+                                    Panel de Control ATCM
+                                </a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <a href="https://qliksense.gruporomero.com.pe/azure/sense/app/f1bb0574-3ac6-42a9-8f32-6747834dadc4/sheet/5e13b9b2-3388-47d5-8fda-c51e805af317/state/analysis"
+                                    target="_blank">
+                                    Programa anual CTE
+                                </a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <a href="https://qliksense.gruporomero.com.pe/azure/sense/app/f1bb0574-3ac6-42a9-8f32-6747834dadc4/sheet/5e13b9b2-3388-47d5-8fda-c51e805af317/state/analysis"
+                                    target="_blank">
+                                    Horometro y Km de UT
+                                </a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <a href="https://qliksense.gruporomero.com.pe/azure/sense/app/f1bb0574-3ac6-42a9-8f32-6747834dadc4/sheet/5e13b9b2-3388-47d5-8fda-c51e805af317/state/analysis"
+                                    target="_blank">
+                                    Documentacion Flota ATCM
+                                </a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <a href="https://qliksense.gruporomero.com.pe/azure/sense/app/f1bb0574-3ac6-42a9-8f32-6747834dadc4/sheet/5e13b9b2-3388-47d5-8fda-c51e805af317/state/analysis"
+                                    target="_blank">
+                                    Reporte de Mantenimiento
+                                </a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <a href="https://qliksense.gruporomero.com.pe/azure/sense/app/f1bb0574-3ac6-42a9-8f32-6747834dadc4/sheet/5e13b9b2-3388-47d5-8fda-c51e805af317/state/analysis"
+                                    target="_blank">
+                                    Avance Mtto de Carreteras
+                                </a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <a href="https://qliksense.gruporomero.com.pe/azure/sense/app/f1bb0574-3ac6-42a9-8f32-6747834dadc4/sheet/5e13b9b2-3388-47d5-8fda-c51e805af317/state/analysis"
+                                    target="_blank">
+                                    Avance Mtto de Alcantarillas
+                                </a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <a href="https://qliksense.gruporomero.com.pe/azure/sense/app/f1bb0574-3ac6-42a9-8f32-6747834dadc4/sheet/5e13b9b2-3388-47d5-8fda-c51e805af317/state/analysis"
+                                    target="_blank">
+                                    Avance Mtto de Drenajes
+                                </a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <a href="https://qliksense.gruporomero.com.pe/azure/sense/app/f1bb0574-3ac6-42a9-8f32-6747834dadc4/sheet/5e13b9b2-3388-47d5-8fda-c51e805af317/state/analysis"
+                                    target="_blank">
+                                    Gastos Fijos
+                                </a>
+                            </td>
+
+                        </tr>
+                        <tr>
+                            <td>
+                                <a href="https://qliksense.gruporomero.com.pe/azure/sense/app/f1bb0574-3ac6-42a9-8f32-6747834dadc4/sheet/5e13b9b2-3388-47d5-8fda-c51e805af317/state/analysis"
+                                    target="_blank">
+                                    Gastos de Venta
+                                </a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <a href="https://qliksense.gruporomero.com.pe/azure/sense/app/f1bb0574-3ac6-42a9-8f32-6747834dadc4/sheet/5e13b9b2-3388-47d5-8fda-c51e805af317/state/analysis"
+                                    target="_blank">
+                                    Gastos RRSS
+                                </a>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="submenu-item" id="shanusi" style="display: none" onclick="toggleTable(this)">
+                    <div class="menu-dropdown">
+                        <a>Shanusi</a>
+                    </div>
+                </div>
+                <div class="custom-table">
+                    <table>
+                        <!--SH-->
+                        <tr>
+                            <td>
+                                <a href="https://qliksense.gruporomero.com.pe/azure/sense/app/f1bb0574-3ac6-42a9-8f32-6747834dadc4/sheet/5e13b9b2-3388-47d5-8fda-c51e805af317/state/analysis"
+                                    target="_blank">
+                                    HH Tecnicos
+                                </a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <a href="https://qliksense.gruporomero.com.pe/azure/sense/app/f1bb0574-3ac6-42a9-8f32-6747834dadc4/sheet/5e13b9b2-3388-47d5-8fda-c51e805af317/state/analysis"
+                                    target="_blank">
+                                    Rendimiento de Flotas
+                                </a>
+                            </td>
+
+                        </tr>
+                        <tr>
+                            <td>
+                                <a href="https://qliksense.gruporomero.com.pe/azure/sense/app/f1bb0574-3ac6-42a9-8f32-6747834dadc4/sheet/5e13b9b2-3388-47d5-8fda-c51e805af317/state/analysis"
+                                    target="_blank">
+                                    Pedidos y Servicios ATC
+                                </a>
+                            </td>
+
+                        </tr>
+                        <tr>
+                            <td>
+                                <a href="https://qliksense.gruporomero.com.pe/azure/sense/app/f1bb0574-3ac6-42a9-8f32-6747834dadc4/sheet/5e13b9b2-3388-47d5-8fda-c51e805af317/state/analysis"
+                                    target="_blank">
+                                    Documentacion Flota ATCM
+                                </a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <a href="https://qliksense.gruporomero.com.pe/azure/sense/app/f1bb0574-3ac6-42a9-8f32-6747834dadc4/sheet/5e13b9b2-3388-47d5-8fda-c51e805af317/state/analysis"
+                                    target="_blank">
+                                    Reporte de Mantenimiento
+                                </a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <a href="https://qliksense.gruporomero.com.pe/azure/sense/app/f1bb0574-3ac6-42a9-8f32-6747834dadc4/sheet/5e13b9b2-3388-47d5-8fda-c51e805af317/state/analysis"
+                                    target="_blank">
+                                    Avance Mtto de Carreteras
+                                </a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <a href="https://qliksense.gruporomero.com.pe/azure/sense/app/f1bb0574-3ac6-42a9-8f32-6747834dadc4/sheet/5e13b9b2-3388-47d5-8fda-c51e805af317/state/analysis"
+                                    target="_blank">
+                                    Avance Mtto de Alcantarillas
+                                </a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <a href="https://qliksense.gruporomero.com.pe/azure/sense/app/f1bb0574-3ac6-42a9-8f32-6747834dadc4/sheet/5e13b9b2-3388-47d5-8fda-c51e805af317/state/analysis"
+                                    target="_blank">
+                                    Avance Mtto de Drenajes
+                                </a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <a href="https://qliksense.gruporomero.com.pe/azure/sense/app/f1bb0574-3ac6-42a9-8f32-6747834dadc4/sheet/5e13b9b2-3388-47d5-8fda-c51e805af317/state/analysis"
+                                    target="_blank">
+                                    Gastos Fijos
+                                </a>
+                            </td>
+
+                        </tr>
+                        <tr>
+                            <td>
+                                <a href="https://qliksense.gruporomero.com.pe/azure/sense/app/f1bb0574-3ac6-42a9-8f32-6747834dadc4/sheet/5e13b9b2-3388-47d5-8fda-c51e805af317/state/analysis"
+                                    target="_blank">
+                                    Gastos de Venta
+                                </a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <a href="https://qliksense.gruporomero.com.pe/azure/sense/app/f1bb0574-3ac6-42a9-8f32-6747834dadc4/sheet/5e13b9b2-3388-47d5-8fda-c51e805af317/state/analysis"
+                                    target="_blank">
+                                    Gastos RRSS
+                                </a>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+
+                <div class="menu-item" onclick="toggleTable(this)">
+                    <div class="menu-dropdown">
+                        <a>Plantación</a>
+                    </div>
+                </div>
+                <div class="custom-table">
+                    <table>
+                        <tr>
+                            <td>
+                                <a href=" https://qliksense.gruporomero.com.pe/azure/sense/app/39ad6374-dc9a-4d29-8665-2822d42c7f02"
+                                    target="_blank">
+                                    Sabana TEA
+                                </a>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+
+                <div class="menu-item" onclick="toggleTable(this)">
+                    <div class="menu-dropdown">
+                        <a>Industrial</a>
+                    </div>
+                </div>
+                <div class="custom-table">
+                    <table>
+                        <tr>
+                            <td>
+                                <a href="https://qliksense.gruporomero.com.pe/azure/sense/app/2218ea81-eb1d-4532-a19c-27ca5ae0ed04/sheet/06ba7890-154d-486b-8ad1-18137bbb98db/state/analysis"
+                                    target="_blank">
+                                    Sabana Materias Primas
+                                </a>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+        <br>
+        <div class="downstream-container closed">
+            <h2 onclick="toggleSubMenu('downstream', 'upstream')">Downstream</h2>
+
+            <div class="menu-container">
+                <!-- Contenido de Downstream -->
+                <div class="menu-item" onclick="toggleTable(this)">
+                    <div class="menu-dropdown">
+                        <a>Gerencia Comercial</a>
+                    </div>
+                </div>
+                <div class="custom-table">
+                    <table>
+                        <tr>
+                            <td>
+                                <a href="https://qliksense.gruporomero.com.pe/azure/sense/app/e0bacbf5-9d16-4b7b-abad-1a2d15db9cee/overview"
+                                    target="_blank">
+                                    Plantilla de Datos Sabanon Comercial
+                                </a>
+                            </td>
+                        </tr>
+                        <tr class="invisible-item">
+                            <td onclick="openModal('myModal', '[DASH-GC-002] Avance de Ventas Operativo')">
+                                [DASH-GC-002] Avance de Ventas Operativo
+                            </td>
+                        </tr>
+
+                    </table>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <script>
+        var menuToggle = document.querySelector('.menu-toggle');
+        var mobileMenu = document.querySelector('.mobile-menu');
+        var menuItems = document.querySelectorAll('.mobile-item ');
+
+        menuToggle.addEventListener('click', function () {
+            mobileMenu.classList.toggle('active');
+
+            // Agregar o quitar la clase 'active' de los elementos del menú
+            menuItems.forEach(function (menuItem) {
+                menuItem.classList.toggle('active', mobileMenu.classList.contains('active'));
+            });
+        });
+
+        var loadingOverlay = document.querySelector('.loading-overlay');
+        var loadingImage = document.querySelector('.loading-image');
+
+        loadingOverlay.style.opacity = 1;  // Mantén la opacidad en 1 para que la pantalla de carga sea visible
+        setTimeout(function () {
+            loadingOverlay.style.opacity = 0;  // Después de 10 segundos (o el tiempo que desees), oculta la pantalla de carga
+            setTimeout(function () {
+                loadingOverlay.style.display = 'none';
+                document.body.classList.remove('.loading-overlay');  // Elimina la clase 'loading' después de ocultar la pantalla de carga
+            }, 800);  // Agrega un tiempo adicional si es necesario para asegurarte de que la opacidad llegue a cero antes de eliminar la clase
+        }, 2000);
+
+        loadingImage.style.display = 'block';
+
+        // Ocultar la imagen después de cierto tiempo (puedes ajustar el tiempo según tus necesidades)
+        setTimeout(function () {
+            loadingImage.style.display = 'none';
+        }, 2000);
+
+        var activeContainer = null;
+
+        function closeAllContainers() {
+            var containers = document.querySelectorAll(".upstream-container, .downstream-container");
+            containers.forEach(function (container) {
+                container.classList.remove("open");
+                container.classList.add("closed");
+            });
+
+            var items = document.querySelectorAll(".custom-table");
+            items.forEach(function (item) {
+                item.style.maxHeight = '0';
+                item.style.opacity = '0';
+            });
+        }
+
+        function toggleSubMenu(containerType, otherContainerType) {
+            var container = document.querySelector("." + containerType + "-container");
+            var otherContainer = document.querySelector("." + otherContainerType + "-container");
+
+            if (!container.classList.contains("open")) {
+                closeAllContainers();
+                container.classList.remove("closed");
+                container.classList.add("open");
+                activeContainer = containerType;
+            } else {
+                container.classList.remove("open");
+                container.classList.add("closed");
+                activeContainer = null;
+            }
+
+            if (otherContainer.classList.contains("open")) {
+                otherContainer.classList.remove("open");
+                otherContainer.classList.add("closed");
+            }
+        }
+
+        document.addEventListener('click', function (event) {
+            // Verifica si el clic ocurrió fuera del menú móvil
+            if (!mobileMenu.contains(event.target) && !menuToggle.contains(event.target)) {
+                mobileMenu.classList.remove('active');
+                menuItems.forEach(function (menuItem) {
+                    menuItem.classList.remove('active');
+                    var table = menuItem.nextElementSibling;
+                    if (table && table.classList.contains('custom-table')) {
+                        table.style.maxHeight = '0';
+                        table.style.opacity = '0';
+                    }
+                });
+            }
+        });
+
+        function toggleSubMenuPWSH() {
+            var palmawasi = document.getElementById("palmawasi");
+            var shanusi = document.getElementById("shanusi");
+
+            // Toggle para mostrar/ocultar
+            palmawasi.style.display = (palmawasi.style.display === 'none') ? 'block' : 'none';
+            shanusi.style.display = (shanusi.style.display === 'none') ? 'block' : 'none';
+
+            // Apply transition effect
+            setTimeout(function () {
+                palmawasi.style.transition = 'max-height 0.8s, opacity 0.8s';
+                shanusi.style.transition = 'max-height 0.8s, opacity 0.8s';
+                palmawasi.style.maxHeight = (palmawasi.style.display === 'none') ? '0' : '500px';
+                shanusi.style.maxHeight = (shanusi.style.display === 'none') ? '0' : '500px';
+                palmawasi.style.opacity = (palmawasi.style.display === 'none') ? '0' : '1';
+                shanusi.style.opacity = (shanusi.style.display === 'none') ? '0' : '1';
+            }, 10); // Adding a small delay to allow display changes to take effect before transitioning
+        }
+
+        var menuItems = document.querySelectorAll('.menu-item, .submenu-item');
+
+        function closeAllTables() {
+            menuItems.forEach(function (menuItem) {
+                menuItem.classList.remove('active');
+                var table = menuItem.nextElementSibling;
+                if (table && table.classList.contains('custom-table')) {
+                    table.style.maxHeight = '0';
+                    table.style.opacity = '0';
+                }
+            });
+        }
+
+        function toggleTable(menuItem) {
+            var tableDetails = menuItem.nextElementSibling;
+
+            if (tableDetails && tableDetails.classList.contains('custom-table')) {
+                var isActive = menuItem.classList.contains('active');
+
+                closeAllTables();
+
+                if (!isActive) {
+                    menuItem.classList.add('active');
+                    tableDetails.style.maxHeight = '500px';
+                    tableDetails.style.opacity = '1';
+                }
+            }
+        }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Palmas Vision Movil</title>
+    <link rel="stylesheet" href="D:\PlantillasProyectoPaginaBi\PalmasVisionMovil\Css\MenuSabana.css">
+</head>
+
+<body style="
+background-image: url('D:/PlantillasProyectoPaginaBi/PalmasVisionMovil/Img/Imagenes de fondo/2.jpg');
+display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    max-height: 650px;
+    height: 640px;
+    max-width: 360px;
+    overflow: hidden;
+">
+    <header>
+        <div id="logoContainer">
+            <img src="D:\PlantillasProyectoPaginaBi\PalmasVisionMovil\Img\Logos PNG\Logo Grupo Palmas-03.png"
+                alt="Logo Grupo Palmas">
+        </div>
+    </header>
+
+    <div class="report-title-container">
+        <h1>SABANAS</h1>
+    </div>
+
+    <div class="column-container">
+
+        <div class="upstream-container closed">
+            <h2 onclick="toggleSubMenu('upstream', 'downstream')">Upstream</h2>
+
+            <div class="menu-container">
+                <!-- Contenido de Upstream -->
+
+                <div class="menu-item" onclick="toggleTable(this)">
+                    <div class="menu-dropdown">
+                        <a>AGRO</a>
+                    </div>
+                </div>
+                <div class="custom-table">
+                    <table>
+                        <tr>
+                            <td>
+                                Produccion
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                Productividad
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                Mano de Obra
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>
+                                Clima
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                BPA
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                Avance Labores
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>
+                                Rendimiento Equipos
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                Nutricion
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                Sanidad Vegetal
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="menu-item" onclick="toggleSubMenuPWSH(this)">
+                    <div class="menu-dropdown">
+                        <a>ATC</a>
+                    </div>
+                </div>
+                <div class="submenu-item" id="palmawasi" style="display: none" onclick="toggleTable(this)">
+                    <div class="menu-dropdown">
+                        <a>Palmawasi</a>
+                    </div>
+                </div>
+                <div class="submenu-item" id="shanusi" style="display: none" onclick="toggleTable(this)">
+                    <div class="menu-dropdown">
+                        <a>Shanusi</a>
+                    </div>
+                </div>
+
+                <div class="custom-table">
+                    <table>
+                        <!--PALMAWASI-->
+                        <tr>
+                            <td>
+                                Panel de Control ATCM </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                Programa anual CTE </td>
+                        </tr>
+
+                        <tr>
+                            <td>
+                                Gastos Fijos</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                Gastos de Venta</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                Gastos RRSS</td>
+                        </tr>
+                    </table>
+                </div>
+
+
+                <div class="menu-item" onclick="toggleTable(this)">
+                    <div class="menu-dropdown">
+                        <a>Industrial</a>
+                    </div>
+                </div>
+                <div class="custom-table">
+                    <table>
+                        <tr>
+                            <td onclick="openModal('myModal', 'COSTO PRODUCTIVO')">
+                                COSTO PRODUCTIVO
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+        <br>
+        <div class="downstream-container closed">
+            <h2 onclick="toggleSubMenu('downstream', 'upstream')">Downstream</h2>
+
+            <div class="menu-container">
+                <!-- Contenido de Downstream -->
+                <div class="menu-item" onclick="toggleTable(this)">
+                    <div class="menu-dropdown">
+                        <a>Gerencia Comercial</a>
+                    </div>
+                </div>
+                <div class="custom-table">
+                    <table>
+                        <tr>
+                            <td onclick="openModal('myModal', '[DASH-GC-002] Avance de Ventas Operativo')">
+                                [DASH-GC-002] Avance de Ventas Operativo
+                            </td>
+                        </tr>
+                        <tr>
+                            <td onclick="openModal('myModal', '[DASH-GC-001] Avance de Ventas')">
+                                [DASH-GC-001] Avance de Ventas
+                            </td>
+                        </tr>
+                        <tr>
+                            <td onclick="openModal('myModal', '[DASH-GC-003] Notas de Crédito')">
+                                [DASH-GC-003] Notas de Crédito
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="menu-item" onclick="toggleTable(this)">
+                    <div class="menu-dropdown">
+                        <a>Contabilidad</a>
+                    </div>
+                </div>
+                <div class="custom-table">
+                    <table>
+                        <tr>
+                            <td onclick="openModal('myModal', '[DASH-CO-001] Reporte de Gerencia')">
+                                [DASH-CO-001] Reporte de Gerencia
+                            </td>
+                        </tr>
+                        <tr>
+                            <td onclick="openModal('myModal', '[DASH-CO-001] Comité Operaciones')">
+                                [DASH-CO-001] Comité Operaciones
+                            </td>
+                        </tr>
+                        <tr>
+                            <td
+                                onclick="openModal('myModal', 'Consolidado y Combinado - Estado de Situación Financiera')">
+                                Consolidado y Combinado - Estado de Situación Financiera
+                            </td>
+                        </tr>
+                        <tr>
+                            <td onclick="openModal('myModal', 'Estado de Situación Financiera')">
+                                Estado de Situación Financiera
+                            </td>
+                        </tr>
+                        <tr>
+                            <td onclick="openModal('myModal', 'Estasdo de Resultados 2023')">
+                                Estado de Resultados 2023
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="menu-item" onclick="toggleTable(this)">
+                    <div class="menu-dropdown">
+                        <a>Marketing</a>
+                    </div>
+                </div>
+                <div class="custom-table">
+                    <table>
+                        <tr>
+                            <td onclick="openModal('myModal', '[DASH-MK-004] Comité B2C')">
+                                [DASH-MK-004] Comité B2C
+                            </td>
+                        </tr>
+                        <tr>
+                            <td onclick="openModal('myModal', '[DASH-MK-006] Global')">
+                                [DASH-MK-006] Global
+                            </td>
+                        </tr>
+                        <tr>
+                            <td onclick="openModal('myModal', '[DASH-MK-001] Dashboard Estratégico')">
+                                [DASH-MK-001] Dashboard Estratégico
+                            </td>
+                        </tr>
+                        <tr>
+                            <td onclick="openModal('myModal', '[DASH-MK-008] Comité B2B')">
+                                [DASH-MK-008] Comité B2B
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="menu-item" onclick="toggleTable(this)">
+                    <div class="menu-dropdown">
+                        <a>Planeamiento Financiero</a>
+                    </div>
+                </div>
+                <div class="custom-table">
+                    <table>
+                        <tr>
+                            <td onclick="openModal('myModal', '[DASH-PF-001] Notas de Crédito')">
+                                [DASH-PF-001] Notas de Crédito
+                            </td>
+                        </tr>
+                        <tr>
+                            <td onclick="openModal('myModal', '[DASH-MK-009] Reporte de Rentabilidad')">
+                                [DASH-MK-009] Reporte de Rentabilidad
+                            </td>
+                        </tr>
+                        <tr>
+                            <td
+                                onclick="openModal('myModal', 'PalmasFinanzas - Reporte Costos y Gastos Grupo Palmas(AWS)')">
+                                PalmasFinanzas - Reporte Costos y Gastos Grupo Palmas(AWS)
+                            </td>
+                        </tr>
+                        <tr>
+                            <td onclick="openModal('myModal', '[DASH-PF-003] DEV_Operex Finanzas')">
+                                [DASH-PF-003] DEV_Operex Finanzas
+                            </td>
+                        </tr>
+                        <tr>
+                            <td onclick="openModal('myModal', '[DASH-PF-004] DEV_ZBB Finanza')">
+                                [DASH-PF-004] DEV_ZBB Finanza
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="menu-item" onclick="toggleTable(this)">
+                    <div class="menu-dropdown">
+                        <a>Gerencia General</a>
+                    </div>
+                </div>
+                <div class="custom-table">
+                    <table>
+                        <tr>
+                            <td onclick="openModal('myModal', '[DASH-GE-001] Reportes Analíticos Palmas (Índice)(31)')">
+                                [DASH-GE-001] Reportes Analíticos Palmas (Índice)(31)
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="menu-item" onclick="toggleTable(this)">
+                    <div class="menu-dropdown">
+                        <a>Industrial</a>
+                    </div>
+                </div>
+                <div class="custom-table">
+                    <table>
+                        <tr>
+                            <td onclick="openModal('myModal', 'REPORTE DE MERMAS IGASA')">
+                                REPORTE DE MERMAS IGASA
+                            </td>
+                        </tr>
+                        <tr>
+                            <td
+                                onclick="openModal('myModal', 'REPORTE DE MERMAS DE ENVASADO Y CONSUMO DE MAT.AUX.REFINADOS')">
+                                REPORTE DE MERMAS DE ENVASADO Y CONSUMO DE MAT.AUX.REFINADOS
+                            </td>
+                        </tr>
+                        <tr>
+                            <td onclick="openModal('myModal', 'REPORTE MERMAS ENVASADO V2')">
+                                REPORTE MERMAS ENVASADO V2
+                            </td>
+                        </tr>
+                        <tr>
+                            <td
+                                onclick="openModal('myModal', '[DASH-PI-001] Indicador de Costos Componentes - Fabricación')">
+                                [DASH-PI-001] Indicador de Costos Componentes - Fabricación
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="menu-item" onclick="toggleTable(this)">
+                    <div class="menu-dropdown">
+                        <a>Supply</a>
+                    </div>
+                </div>
+                <div class="custom-table">
+                    <table>
+                        <tr>
+                            <td onclick="openModal('myModal', '[DASH-CA-002] Inventario & Avance de Ventas')">
+                                [DASH-CA-002] Inventario & Avance de Ventas
+                            </td>
+                        </tr>
+                        <tr>
+                            <td onclick="openModal('myModal', '[DASH-CA-001] Avance de Ventas - Supply')">
+                                [DASH-CA-001] Avance de Ventas - Supply
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="menu-item" onclick="toggleTable(this)">
+                    <div class="menu-dropdown">
+                        <a>ATC</a>
+                    </div>
+                </div>
+                <div class="custom-table">
+                    <table>
+                        <tr>
+                            <td onclick="openModal('myModal', 'Balanza PW')">
+                                Balanza PW
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="menu-item" onclick="toggleTable(this)">
+                    <div class="menu-dropdown">
+                        <a>Recursos Humanos</a>
+                    </div>
+                </div>
+                <div class="custom-table">
+                    <table>
+                        <tr>
+                            <td onclick="openModal('myModal', '[DASH-RH-001] Indicadores RRHH por Área y Unidad')">
+                                [DASH-RH-001] Indicadores RRHH por Área y Unidad
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script>
+
+        var activeContainer = null;
+
+        function closeAllContainers() {
+            var containers = document.querySelectorAll(".upstream-container, .downstream-container");
+            containers.forEach(function (container) {
+                container.classList.remove("open");
+                container.classList.add("closed");
+            });
+
+            var items = document.querySelectorAll(".custom-table");
+            items.forEach(function (item) {
+                item.style.maxHeight = '0';
+                item.style.opacity = '0';
+            });
+        }
+
+        function toggleSubMenu(containerType, otherContainerType) {
+            var container = document.querySelector("." + containerType + "-container");
+            var otherContainer = document.querySelector("." + otherContainerType + "-container");
+
+            if (!container.classList.contains("open")) {
+                closeAllContainers();
+                container.classList.remove("closed");
+                container.classList.add("open");
+                activeContainer = containerType;
+            } else {
+                container.classList.remove("open");
+                container.classList.add("closed");
+                activeContainer = null;
+            }
+
+            if (otherContainer.classList.contains("open")) {
+                otherContainer.classList.remove("open");
+                otherContainer.classList.add("closed");
+            }
+        }
+
+
+        function toggleSubMenuPWSH() {
+            var palmawasi = document.getElementById("palmawasi");
+            var shanusi = document.getElementById("shanusi");
+
+            // Toggle para mostrar/ocultar
+            palmawasi.style.display = (palmawasi.style.display === 'none') ? 'block' : 'none';
+            shanusi.style.display = (shanusi.style.display === 'none') ? 'block' : 'none';
+
+            // Apply transition effect
+            setTimeout(function () {
+                palmawasi.style.transition = 'max-height 0.8s, opacity 0.8s';
+                shanusi.style.transition = 'max-height 0.8s, opacity 0.8s';
+                palmawasi.style.maxHeight = (palmawasi.style.display === 'none') ? '0' : '500px';
+                shanusi.style.maxHeight = (shanusi.style.display === 'none') ? '0' : '500px';
+                palmawasi.style.opacity = (palmawasi.style.display === 'none') ? '0' : '1';
+                shanusi.style.opacity = (shanusi.style.display === 'none') ? '0' : '1';
+            }, 10); // Adding a small delay to allow display changes to take effect before transitioning
+        }
+
+        var menuItems = document.querySelectorAll('.menu-item, .submenu-item');
+
+        function closeAllTables() {
+            menuItems.forEach(function (menuItem) {
+                menuItem.classList.remove('active');
+                var table = menuItem.nextElementSibling;
+                if (table && table.classList.contains('custom-table')) {
+                    table.style.maxHeight = '0';
+                    table.style.opacity = '0';
+                }
+            });
+        }
+
+        function toggleTable(menuItem) {
+            var tableDetails = menuItem.nextElementSibling;
+
+            if (tableDetails && tableDetails.classList.contains('custom-table')) {
+                var isActive = menuItem.classList.contains('active');
+
+                closeAllTables();
+
+                if (!isActive) {
+                    menuItem.classList.add('active');
+                    tableDetails.style.maxHeight = '500px';
+                    tableDetails.style.opacity = '1';
+                }
+            }
+        }
+    </script>
+</body>
+
+</html>
