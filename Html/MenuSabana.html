@@ -5,22 +5,21 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Palmas Vision Movil</title>
-    <link rel="stylesheet" href="https://palmasvision360movil.azurewebsites.net/Css\MenuSabana.css">
+    <link rel="stylesheet" href="https://palmasvisionmobil.surge.sh/Css\MenuSabana.css">
 </head>
 
 <body style="
-background-image: url('https://palmasvision360movil.azurewebsites.net/Img/Imagenes de fondo/2.jpg');
+background-image: url('https://palmasvisionmobil.surge.sh/Img/Imagenes de fondo/2.jpg');
 display: flex;
-    flex-direction: column;
+flex-direction: column;
     align-items: center;
     justify-content: center;
     max-height: 650px;
     height: 640px;
-    max-width: 360px;
 ">
     <div class="loading-overlay">
         <div class="loading-image">
-            <img src="https://palmasvision360movil.azurewebsites.net/Img/Logos PNG/Logo Grupo Palmas-03.png" />
+            <img src="https://palmasvisionmobil.surge.sh/Img/Logos PNG/Logo Grupo Palmas-03.png" />
         </div>
     </div>
     <header>
@@ -31,395 +30,91 @@ display: flex;
         </div>
         <div class="mobile-menu">
             <div class="mobile-item-container">
-                <div class="mobile-item">
-                    <a href="https://palmasvision360movil.azurewebsites.net/Html\MenuReporte.html">REPORTES</a>
+                <div class="mobile-item-titles">
+                    <a href="https://palmasvisionmobil.surge.sh/Html/MenuReporte.html">REPORTES MODO CELULAR</a>
                 </div>
-
                 <div class="mobile-item">
-                    <a href="https://palmasvision360movil.azurewebsites.net/Html\MenuSabana.html">SABANA</a>
+                    <a href="">AVO</a>
+                </div>
+                <div class="mobile-item">
+                    <a href="">VENTA DIARIA</a>
+                </div>
+                <div class="mobile-item">
+                    <a href="">STOCK</a>
+                </div>
+                <div class="mobile-item">
+                    <a href="">TEA</a>
+                </div>
+                <div class="mobile-item-titles">
+                    <a href="">INFORMACION</a>
+                </div>
+                <div class="mobile-item">
+                    <a href="https://palmasvisionmobil.surge.sh/Html\MenuSabana.html">EQUIPO BI</a>
                 </div>
             </div>
         </div>
+
         <div id="logoContainer">
-            <img src="https://palmasvision360movil.azurewebsites.net/Img\Logos PNG\Logo Grupo Palmas-03.png"
+            <img src="https://palmasvisionmobil.surge.sh/Img\Logos PNG\Logo Grupo Palmas-03.png"
                 alt="Logo Grupo Palmas">
         </div>
     </header>
-    <div id="imgReporte">
-        <img src="https://palmasvision360movil.azurewebsites.net/Img\Carrusel\2.png">
-    </div>
+
     <div class="column-container">
         <div class="report-title-container">
-            <h1>SABANAS</h1>
+            <h1>EQUIPO BI</h1>
         </div>
-        <div class="upstream-container closed">
-            <h2 onclick="toggleSubMenu('upstream', 'downstream')">Upstream</h2>
 
-            <div class="menu-container">
-                <!-- Contenido de Upstream -->
 
-                <div class="menu-item" onclick="toggleTable(this)">
-                    <div class="menu-dropdown">
-                        <a>AGRO</a>
+        <div class="grid-container">
+            <!-- Cuadro para Avance AVO -->
+            <div class="grid-item">
+                <!-- Contenido original del grid-item -->
+                <div class="row">
+                    <div class="column img-column">
+                        <img src="https://palmasvisionmobil.surge.sh/Img\Reportes celular\user.png">
                     </div>
-                </div>
-                <div class="custom-table">
-                    <table>
-                        <tr>
-                            <td>
-                                <a href="https://qliksense.gruporomero.com.pe/azure/sense/app/5ce9ac97-7e01-4f6e-acbc-e02beb03fc46/overview"
-                                    target="_blank">
-                                    Produccion
-                                </a>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                <a href="https://qliksense.gruporomero.com.pe/azure/sense/app/5ce9ac97-7e01-4f6e-acbc-e02beb03fc46/overview"
-                                    target="_blank">
-                                    Productividad
-                                </a>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                <a href="https://qliksense.gruporomero.com.pe/azure/sense/app/5ce9ac97-7e01-4f6e-acbc-e02beb03fc46/overview"
-                                    target="_blank">
-                                    Mano de Obra
-
-                                </a>
-                            </td>
-                        </tr>
-
-                        <tr>
-                            <td>
-                                <a href="https://qliksense.gruporomero.com.pe/azure/sense/app/5ce9ac97-7e01-4f6e-acbc-e02beb03fc46/overview"
-                                    target="_blank">
-                                    Clima
-
-                                </a>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                <a href="https://qliksense.gruporomero.com.pe/azure/sense/app/5ce9ac97-7e01-4f6e-acbc-e02beb03fc46/overview"
-                                    target="_blank">
-                                    BPA
-                                </a>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                <a href="https://qliksense.gruporomero.com.pe/azure/sense/app/5ce9ac97-7e01-4f6e-acbc-e02beb03fc46/overview"
-                                    target="_blank">
-                                    Avance Labores
-                                </a>
-                            </td>
-
-                        </tr>
-
-                        <tr>
-                            <td>
-                                <a href="https://qliksense.gruporomero.com.pe/azure/sense/app/5ce9ac97-7e01-4f6e-acbc-e02beb03fc46/overview"
-                                    target="_blank">
-                                    Rendimiento Equipos
-                                </a>
-                            </td>
-
-                        </tr>
-                        <tr>
-                            <td>
-                                <a href="https://qliksense.gruporomero.com.pe/azure/sense/app/5ce9ac97-7e01-4f6e-acbc-e02beb03fc46/overview"
-                                    target="_blank">
-                                    Nutricion
-                                </a>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                <a href="https://qliksense.gruporomero.com.pe/azure/sense/app/5ce9ac97-7e01-4f6e-acbc-e02beb03fc46/overview"
-                                    target="_blank">
-                                    Sanidad Vegetal
-                                </a>
-                            </td>
-                        </tr>
-                    </table>
-                </div>
-                <div class="menu-item" onclick="toggleSubMenuPWSH(this)">
-                    <div class="menu-dropdown">
-                        <a>ATC</a>
+                    <div class="column text-column">
+                        <p>Cesar Diaz Huiza</p>
+                        <p>cdiazh@palmas.com.pe</p>
                     </div>
-                </div>
-                <div class="submenu-item" id="palmawasi" style="display: none" onclick="toggleTable(this)">
-                    <div class="menu-dropdown">
-                        <a>Palmawasi</a>
-                    </div>
-                </div>
-                <div class="custom-table">
-                    <table>
-                        <!--PALMAWASI-->
-                        <tr>
-                            <td>
-                                <a href="https://qliksense.gruporomero.com.pe/azure/sense/app/f1bb0574-3ac6-42a9-8f32-6747834dadc4/sheet/5e13b9b2-3388-47d5-8fda-c51e805af317/state/analysis"
-                                    target="_blank">
-                                    Panel de Control ATCM
-                                </a>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                <a href="https://qliksense.gruporomero.com.pe/azure/sense/app/f1bb0574-3ac6-42a9-8f32-6747834dadc4/sheet/5e13b9b2-3388-47d5-8fda-c51e805af317/state/analysis"
-                                    target="_blank">
-                                    Programa anual CTE
-                                </a>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                <a href="https://qliksense.gruporomero.com.pe/azure/sense/app/f1bb0574-3ac6-42a9-8f32-6747834dadc4/sheet/5e13b9b2-3388-47d5-8fda-c51e805af317/state/analysis"
-                                    target="_blank">
-                                    Horometro y Km de UT
-                                </a>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                <a href="https://qliksense.gruporomero.com.pe/azure/sense/app/f1bb0574-3ac6-42a9-8f32-6747834dadc4/sheet/5e13b9b2-3388-47d5-8fda-c51e805af317/state/analysis"
-                                    target="_blank">
-                                    Documentacion Flota ATCM
-                                </a>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                <a href="https://qliksense.gruporomero.com.pe/azure/sense/app/f1bb0574-3ac6-42a9-8f32-6747834dadc4/sheet/5e13b9b2-3388-47d5-8fda-c51e805af317/state/analysis"
-                                    target="_blank">
-                                    Reporte de Mantenimiento
-                                </a>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                <a href="https://qliksense.gruporomero.com.pe/azure/sense/app/f1bb0574-3ac6-42a9-8f32-6747834dadc4/sheet/5e13b9b2-3388-47d5-8fda-c51e805af317/state/analysis"
-                                    target="_blank">
-                                    Avance Mtto de Carreteras
-                                </a>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                <a href="https://qliksense.gruporomero.com.pe/azure/sense/app/f1bb0574-3ac6-42a9-8f32-6747834dadc4/sheet/5e13b9b2-3388-47d5-8fda-c51e805af317/state/analysis"
-                                    target="_blank">
-                                    Avance Mtto de Alcantarillas
-                                </a>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                <a href="https://qliksense.gruporomero.com.pe/azure/sense/app/f1bb0574-3ac6-42a9-8f32-6747834dadc4/sheet/5e13b9b2-3388-47d5-8fda-c51e805af317/state/analysis"
-                                    target="_blank">
-                                    Avance Mtto de Drenajes
-                                </a>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                <a href="https://qliksense.gruporomero.com.pe/azure/sense/app/f1bb0574-3ac6-42a9-8f32-6747834dadc4/sheet/5e13b9b2-3388-47d5-8fda-c51e805af317/state/analysis"
-                                    target="_blank">
-                                    Gastos Fijos
-                                </a>
-                            </td>
-
-                        </tr>
-                        <tr>
-                            <td>
-                                <a href="https://qliksense.gruporomero.com.pe/azure/sense/app/f1bb0574-3ac6-42a9-8f32-6747834dadc4/sheet/5e13b9b2-3388-47d5-8fda-c51e805af317/state/analysis"
-                                    target="_blank">
-                                    Gastos de Venta
-                                </a>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                <a href="https://qliksense.gruporomero.com.pe/azure/sense/app/f1bb0574-3ac6-42a9-8f32-6747834dadc4/sheet/5e13b9b2-3388-47d5-8fda-c51e805af317/state/analysis"
-                                    target="_blank">
-                                    Gastos RRSS
-                                </a>
-                            </td>
-                        </tr>
-                    </table>
-                </div>
-                <div class="submenu-item" id="shanusi" style="display: none" onclick="toggleTable(this)">
-                    <div class="menu-dropdown">
-                        <a>Shanusi</a>
-                    </div>
-                </div>
-                <div class="custom-table">
-                    <table>
-                        <!--SH-->
-                        <tr>
-                            <td>
-                                <a href="https://qliksense.gruporomero.com.pe/azure/sense/app/f1bb0574-3ac6-42a9-8f32-6747834dadc4/sheet/5e13b9b2-3388-47d5-8fda-c51e805af317/state/analysis"
-                                    target="_blank">
-                                    HH Tecnicos
-                                </a>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                <a href="https://qliksense.gruporomero.com.pe/azure/sense/app/f1bb0574-3ac6-42a9-8f32-6747834dadc4/sheet/5e13b9b2-3388-47d5-8fda-c51e805af317/state/analysis"
-                                    target="_blank">
-                                    Rendimiento de Flotas
-                                </a>
-                            </td>
-
-                        </tr>
-                        <tr>
-                            <td>
-                                <a href="https://qliksense.gruporomero.com.pe/azure/sense/app/f1bb0574-3ac6-42a9-8f32-6747834dadc4/sheet/5e13b9b2-3388-47d5-8fda-c51e805af317/state/analysis"
-                                    target="_blank">
-                                    Pedidos y Servicios ATC
-                                </a>
-                            </td>
-
-                        </tr>
-                        <tr>
-                            <td>
-                                <a href="https://qliksense.gruporomero.com.pe/azure/sense/app/f1bb0574-3ac6-42a9-8f32-6747834dadc4/sheet/5e13b9b2-3388-47d5-8fda-c51e805af317/state/analysis"
-                                    target="_blank">
-                                    Documentacion Flota ATCM
-                                </a>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                <a href="https://qliksense.gruporomero.com.pe/azure/sense/app/f1bb0574-3ac6-42a9-8f32-6747834dadc4/sheet/5e13b9b2-3388-47d5-8fda-c51e805af317/state/analysis"
-                                    target="_blank">
-                                    Reporte de Mantenimiento
-                                </a>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                <a href="https://qliksense.gruporomero.com.pe/azure/sense/app/f1bb0574-3ac6-42a9-8f32-6747834dadc4/sheet/5e13b9b2-3388-47d5-8fda-c51e805af317/state/analysis"
-                                    target="_blank">
-                                    Avance Mtto de Carreteras
-                                </a>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                <a href="https://qliksense.gruporomero.com.pe/azure/sense/app/f1bb0574-3ac6-42a9-8f32-6747834dadc4/sheet/5e13b9b2-3388-47d5-8fda-c51e805af317/state/analysis"
-                                    target="_blank">
-                                    Avance Mtto de Alcantarillas
-                                </a>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                <a href="https://qliksense.gruporomero.com.pe/azure/sense/app/f1bb0574-3ac6-42a9-8f32-6747834dadc4/sheet/5e13b9b2-3388-47d5-8fda-c51e805af317/state/analysis"
-                                    target="_blank">
-                                    Avance Mtto de Drenajes
-                                </a>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                <a href="https://qliksense.gruporomero.com.pe/azure/sense/app/f1bb0574-3ac6-42a9-8f32-6747834dadc4/sheet/5e13b9b2-3388-47d5-8fda-c51e805af317/state/analysis"
-                                    target="_blank">
-                                    Gastos Fijos
-                                </a>
-                            </td>
-
-                        </tr>
-                        <tr>
-                            <td>
-                                <a href="https://qliksense.gruporomero.com.pe/azure/sense/app/f1bb0574-3ac6-42a9-8f32-6747834dadc4/sheet/5e13b9b2-3388-47d5-8fda-c51e805af317/state/analysis"
-                                    target="_blank">
-                                    Gastos de Venta
-                                </a>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                <a href="https://qliksense.gruporomero.com.pe/azure/sense/app/f1bb0574-3ac6-42a9-8f32-6747834dadc4/sheet/5e13b9b2-3388-47d5-8fda-c51e805af317/state/analysis"
-                                    target="_blank">
-                                    Gastos RRSS
-                                </a>
-                            </td>
-                        </tr>
-                    </table>
-                </div>
-
-                <div class="menu-item" onclick="toggleTable(this)">
-                    <div class="menu-dropdown">
-                        <a>Plantación</a>
-                    </div>
-                </div>
-                <div class="custom-table">
-                    <table>
-                        <tr>
-                            <td>
-                                <a href=" https://qliksense.gruporomero.com.pe/azure/sense/app/39ad6374-dc9a-4d29-8665-2822d42c7f02"
-                                    target="_blank">
-                                    Sabana TEA
-                                </a>
-                            </td>
-                        </tr>
-                    </table>
-                </div>
-
-                <div class="menu-item" onclick="toggleTable(this)">
-                    <div class="menu-dropdown">
-                        <a>Industrial</a>
-                    </div>
-                </div>
-                <div class="custom-table">
-                    <table>
-                        <tr>
-                            <td>
-                                <a href="https://qliksense.gruporomero.com.pe/azure/sense/app/2218ea81-eb1d-4532-a19c-27ca5ae0ed04/sheet/06ba7890-154d-486b-8ad1-18137bbb98db/state/analysis"
-                                    target="_blank">
-                                    Sabana Materias Primas
-                                </a>
-                            </td>
-                        </tr>
-                    </table>
                 </div>
             </div>
         </div>
-        <br>
-        <div class="downstream-container closed">
-            <h2 onclick="toggleSubMenu('downstream', 'upstream')">Downstream</h2>
 
-            <div class="menu-container">
-                <!-- Contenido de Downstream -->
-                <div class="menu-item" onclick="toggleTable(this)">
-                    <div class="menu-dropdown">
-                        <a>Gerencia Comercial</a>
+        <div class="grid-container">
+            <!-- Cuadro para Avance AVO -->
+            <div class="grid-item">
+                <!-- Contenido original del grid-item -->
+                <div class="row">
+                    <div class="column img-column">
+                        <img src="https://palmasvisionmobil.surge.sh/Img\Reportes celular\user.png">
+                    </div>
+                    <div class="column text-column">
+                        <p>Manuel Delgado</p>
+                        <p>mdelgadoq@palmas.com.pe</p>
                     </div>
                 </div>
-                <div class="custom-table">
-                    <table>
-                        <tr>
-                            <td>
-                                <a href="https://qliksense.gruporomero.com.pe/azure/sense/app/e0bacbf5-9d16-4b7b-abad-1a2d15db9cee/overview"
-                                    target="_blank">
-                                    Plantilla de Datos Sabanon Comercial
-                                </a>
-                            </td>
-                        </tr>
-                        <tr class="invisible-item">
-                            <td onclick="openModal('myModal', '[DASH-GC-002] Avance de Ventas Operativo')">
-                                [DASH-GC-002] Avance de Ventas Operativo
-                            </td>
-                        </tr>
-
-                    </table>
-                </div>
-
             </div>
         </div>
+
+
+        <div class="grid-container">
+            <!-- Cuadro para Avance AVO -->
+            <div class="grid-item">
+                <!-- Contenido original del grid-item -->
+                <div class="row">
+                    <div class="column img-column">
+                        <img src="https://palmasvisionmobil.surge.sh/Img\Reportes celular\user.png">
+                    </div>
+                    <div class="column text-column">
+                        <p>Gianmarco Loyola</p>
+                        <p>gloyolaa@palmas.com.pe</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
     </div>
     <script>
         var menuToggle = document.querySelector('.menu-toggle');

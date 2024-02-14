@@ -25,6 +25,32 @@ img {
     height: auto;
 }
 
+#palmasVisionContainer {
+    margin-bottom: 20px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: -80px; /* Ajusta el margen superior según sea necesario */
+}
+
+#palmas {
+    color: #ffffff;
+    font-size: 60px;
+    font-family: 'GothamBlock', sans-serif;
+}
+
+#vision {
+    color: #8EB523;
+    font-size: 60px;
+    /* Adjust the margin as needed */
+    display: inline-block;
+    /* Add this property to make it inline with the text */
+    font-family: 'GothamBlock', sans-serif;
+}
+
+
 .button-container {
     display: flex;
     flex-direction: column;
@@ -52,13 +78,8 @@ img {
 .reportes-button .button-text,
 .sabanas-button .button-text {
     font-family: 'GothamBlock', sans-serif;
-    font-size: 20px; /* Tamaño del texto personalizado, ajusta según sea necesario */
-}
-
-.button img {
-    max-width: 20px;
-    max-height: 20px;
-    margin-right: 10px;
+    font-size: 20px;
+    /* Tamaño del texto personalizado, ajusta según sea necesario */
 }
 
 .button:hover {
@@ -68,28 +89,28 @@ img {
 
 @font-face {
     font-family: 'GothamBlock';
-    src: url('https://palmasvision360movil.azurewebsites.net/Fonts/gothamblack-font.otf') format('truetype');
+    src: url('https://palmasvisionmobil.surge.sh/Fonts/gothamblack-font.otf') format('truetype');
     /* Ajusta la ruta y el formato según tu archivo de fuente */
     /* Puedes agregar otros formatos como woff, woff2, etc., para compatibilidad con navegadores */
 }
 
 @font-face {
     font-family: 'GothamBold';
-    src: url('https://palmasvision360movil.azurewebsites.net/Fonts/gothambold-font.otf') format('truetype');
+    src: url('https://palmasvisionmobil.surge.sh/Fonts/gothambold-font.otf') format('truetype');
     /* Ajusta la ruta y el formato según tu archivo de fuente */
     /* Puedes agregar otros formatos como woff, woff2, etc., para compatibilidad con navegadores */
 }
 
 @font-face {
     font-family: 'GothamBook';
-    src: url('https://palmasvision360movil.azurewebsites.net/Fonts/gothambook-font.otf') format('truetype');
+    src: url('https://palmasvisionmobil.surge.sh/Fonts/gothambook-font.otf') format('truetype');
     /* Ajusta la ruta y el formato según tu archivo de fuente */
     /* Puedes agregar otros formatos como woff, woff2, etc., para compatibilidad con navegadores */
 }
 
 @font-face {
     font-family: 'GothamLight';
-    src: url('https://palmasvision360movil.azurewebsites.net/Fonts/gothamlight-font.otf') format('truetype');
+    src: url('https://palmasvisionmobil.surge.sh/Fonts/gothamlight-font.otf') format('truetype');
     /* Ajusta la ruta y el formato según tu archivo de fuente */
     /* Puedes agregar otros formatos como woff, woff2, etc., para compatibilidad con navegadores */
 }

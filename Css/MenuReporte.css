@@ -26,170 +26,81 @@ img {
 }
 
 .column-container {
-    margin-top: -35%; /* Puedes ajustar el valor según tus necesidades */
+    margin-top: -28%;
+    /* Puedes ajustar el valor según tus necesidades */
 }
 
-#imgReporte {
-    margin-top: -25%;
-    text-align: center;
-    margin-left: 10%;
-    z-index: 999;
-    /* Ajusta el margen superior según sea necesario */
-}
-
-#imgReporte img {
-    max-width: 80%;
-    /* La imagen ocupará como máximo el ancho del contenedor */
-    max-height: 80%;
-    /* La imagen ocupará como máximo el alto del contenedor */
-    width: auto;
-    height: auto;
+/* Estilo del grid-container */
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    /* Columnas responsivas */
+    gap: 30px;
+    max-width: 700px;
+    /* Máximo ancho para evitar que los elementos se expandan demasiado */
     margin: 0 auto;
-    /* Centra la imagen horizontalmente */
-    /* Elimina cualquier espacio adicional debajo de la imagen */
-    top: 0;
+    /* Centrar el grid-container horizontalmente */
+}
+
+.grid-item {
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 7px;
+    padding: 10px;
+    width: 86%;
+    /* Ancho relativo al 90% del contenedor */
+    max-width: 300px;
+    /* Máximo ancho para evitar que los elementos se expandan demasiado */
+    margin: 0 auto;
+    /* Centrar el grid-item horizontalmente */
+    height: 60px;
+    margin-bottom: 18px;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.5s, color 0.5s;
+    cursor: pointer;
+}
+
+/* Estilo del texto dentro de los cuadros */
+.grid-item p {
+    color: #000;
+    font-family: 'GothamBook', sans-serif;
+    font-size: 18px;
+    margin: 0;
+    text-align: center;
+}
+
+/* Estilo del grid-item en estado de hover */
+.grid-item:hover {
+    background-color: #022D21;
+    /* Cambia el color de fondo al hacer hover */
+}
+
+/* Estilo del texto dentro de los cuadros en estado de hover */
+.grid-item:hover p {
+    color: #fff;
+    /* Cambia el color del texto al hacer hover */
 }
 
 .report-title-container {
-    font-size: 20px;
+    margin-bottom: 40px;
+    /* Ajusta el valor según sea necesario */
+}
+
+.report-title-container h1 {
+    font-size: 30px;
     text-align: center;
     color: #fff;
     font-family: 'GothamBlock', sans-serif;
-}
-
-.upstream-container,
-.downstream-container {
-    background-color: rgba(255, 255, 255, 0.6);
-    border-radius: 5px;
-    border: none;
-    text-transform: capitalize;
-    overflow: auto;
-    text-align: start;
-    transition: height 0.5s ease;
-    /* Agregamos transición de altura */
-}
-
-/* Configuración para el estado "cerrado" del contenedor */
-.upstream-container.closed,
-.downstream-container.closed {
-    height: 80px;
-    overflow: hidden;
-    /* Altura mínima cuando está cerrado */
-}
-
-/* Configuración para el estado "abierto" del contenedor */
-.upstream-container.open,
-.downstream-container.open {
-    height: 290px;
-    /* Altura máxima cuando está abierto */
-}
-
-.custom-table {
-    margin-top: 8px;
-    /* Ajuste del espacio entre la tabla personalizada y el menú */
-    overflow-y: auto;
-    /* Permite el desplazamiento vertical */
-    max-height: 0;
-    height: 120px;
-    /* Altura inicial de la tabla, comienza oculta */
-    opacity: 0;
-    /* Opacidad inicial */
-    transition: max-height 0.5s, opacity 0.5s;
-    font-family: 'GothamBook', sans-serif;
-    /* Añade transiciones para suavizar la animación */
-}
-
-.menu-item.active .custom-table {
-    max-height: 10px;
-    /* Altura máxima de la tabla al estar activa */
-    height: 20px;
-    /* Altura máxima de la tabla al estar activa */
-    opacity: 1;
-    /* Opacidad al estar activa */
-}
-
-.menu-item {
-    display: none;
-}
-
-.open .menu-item {
-    display: block;
-}
-
-.custom-table table {
-    width: 100%;
-    border-collapse: collapse;
-}
-
-.custom-table th,
-.custom-table td {
-    padding: 10px;
-    text-align: left;
-    /* Borde de las celdas */
-}
-
-td:hover {
-    cursor: pointer;
-}
-
-.custom-table td:hover {
-    color: #022D21;
-    font-family: 'GothamBold', sans-serif;
-}
-
-.custom-table a {
-    color: inherit;
-    /* Hereda el color del texto de su contenedor */
-    text-decoration: none;
-    /* Quita el subrayado */
-}
-
-/* Estilo general para los elementos del menú */
-.menu-item {
-    background-color: #8EB523;
-    padding: 10px;
-    color: #fff;
-    font-family: 'GothamBook', sans-serif;
-    cursor: pointer;
-    text-align: start;
-    font-weight: bold;
-    border-radius: 5px;
-    /* Agrega bordes redondeados */
-    margin-bottom: 10px;
-    /* Espacio entre elementos del menú */
-}
-
-/* Estilo cuando un elemento del menú está activo */
-.menu-item.active {
-    /* Color de fondo de las celdas */
-    display: block;
-}
-
-/* Estilo para el contenido dentro del menú desplegable */
-.menu-dropdown-content a {
-    color: #fff;
-    padding: 12px 16px;
-    text-decoration: none;
-    display: block;
-    border-radius: 5px;
-    /* Agrega bordes redondeados */
-}
-
-.menu-dropdown-content a:hover {
-    background-color: #005a00;
-    border-radius: 5px;
-    /* Agrega bordes redondeados al pasar el mouse */
-}
-
-h2 {
-    color: #000000;
-    font-family: 'GothamBold', sans-serif;
-    text-align: center;
+    margin-top: 20px;
+    /* Ajusta el margen superior según sea necesario */
 }
 
 @font-face {
     font-family: 'GothamBlock';
-    src: url('https://palmasvision360movil.azurewebsites.net/Fonts/gothamblack-font.otf') format('truetype');
+    src: url('https://palmasvisionmobil.surge.sh/Fonts/gothamblack-font.otf') format('truetype');
     /* Ajusta la ruta y el formato según tu archivo de fuente */
     /* Puedes agregar otros formatos como woff, woff2, etc., para compatibilidad con navegadores */
 }
@@ -237,32 +148,6 @@ h2 {
     /* Añade este estilo para centrar horizontalmente */
     display: block;
     /* Añade esta línea para corregir el espacio en blanco adicional */
-}
-
-.loading-text {
-    color: #ffffff;
-    font-size: 24px;
-    font-family: 'GothamBold', sans-serif;
-    margin-bottom: 20px;
-}
-
-.loading-spinner {
-    border: 4px solid rgba(0, 0, 0, 0.801);
-    border-radius: 50%;
-    border-top: 4px solid #8FB623;
-    width: 40px;
-    height: 40px;
-    animation: spin 1s linear infinite;
-}
-
-@keyframes spin {
-    0% {
-        transform: rotate(0deg);
-    }
-
-    100% {
-        transform: rotate(360deg);
-    }
 }
 
 body.loading {
@@ -320,17 +205,26 @@ body.loading .loading-overlay {
     /* Desplaza el menú hacia afuera al estar activo */
 }
 
-.mobile-menu .mobile-item {
-    align-items: center;
-    margin-left: 2.5%;
-    text-align: center;
-    /* Alinea el texto al centro */
-    /* Ajusta según sea necesario */
+.mobile-menu .mobile-item-titles {
+    align-items: left;
+    margin-left: 2.8%;
     text-align: left;
+    /* Alinea el texto al centro */
+    border-radius: 10px;
+    width: 85%;
+    padding: 10px;
+    background-color: #3A3A3A;
+    /* Alinea el texto a la izquierda */
+}
+
+.mobile-menu .mobile-item {
+    align-items: left;
+    margin-left: 3%;
+    text-align: left;
+    /* Alinea el texto al centro */
     border-radius: 10px;
     width: 220px;
     padding: 10px;
-    background-color: #8EB523;
     /* Alinea el texto a la izquierda */
 }
 
@@ -346,30 +240,29 @@ body.loading .loading-overlay {
     /* Ajusta según sea necesario */
 }
 
-.mobile-menu.active .mobile-item {
-    margin-top: 40px;
-    text-align: center;
-    /* Alinea el texto al centro */
-    /* Ajusta según sea necesario */
+.mobile-menu.active .mobile-item,
+.mobile-menu.active .mobile-item-titles {
+    margin-top: 0px;
+    text-align: left;
 }
 
 @font-face {
     font-family: 'GothamBold';
-    src: url('https://palmasvision360movil.azurewebsites.net/Fonts/gothambold-font.otf') format('truetype');
+    src: url('https://palmasvisionmobil.surge.sh/Fonts/gothambold-font.otf') format('truetype');
     /* Ajusta la ruta y el formato según tu archivo de fuente */
     /* Puedes agregar otros formatos como woff, woff2, etc., para compatibilidad con navegadores */
 }
 
 @font-face {
     font-family: 'GothamBook';
-    src: url('https://palmasvision360movil.azurewebsites.net/Fonts/gothambook-font.otf') format('truetype');
+    src: url('https://palmasvisionmobil.surge.sh/Fonts/gothambook-font.otf') format('truetype');
     /* Ajusta la ruta y el formato según tu archivo de fuente */
     /* Puedes agregar otros formatos como woff, woff2, etc., para compatibilidad con navegadores */
 }
 
 @font-face {
     font-family: 'GothamLight';
-    src: url('https://palmasvision360movil.azurewebsites.net/Fonts/gothamlight-font.otf') format('truetype');
+    src: url('https://palmasvisionmobil.surge.sh/Fonts/gothamlight-font.otf') format('truetype');
     /* Ajusta la ruta y el formato según tu archivo de fuente */
     /* Puedes agregar otros formatos como woff, woff2, etc., para compatibilidad con navegadores */
 }
