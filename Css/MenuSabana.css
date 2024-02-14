@@ -66,7 +66,17 @@ img {
 }
 
 .img-column {
-    width: 120%;
+    width: 100%;
+    max-width: 100%;
+}
+
+.img-column img {
+    max-width: 42%; /* Establece el ancho máximo de la imagen al 100% del contenedor */
+    max-height: 42%; /* Establece la altura máxima de la imagen al 100% del contenedor */
+    width: auto;
+    height: auto;
+    border-radius: 25px;
+    object-fit: cover; /* Ajusta la imagen dentro del contenedor sin distorsionarla */
 }
 
 .text-column {
@@ -75,12 +85,6 @@ img {
     align-items: flex-end; /* Alineación hacia el final del eje principal (derecha) */
     width: 60%; /* La columna del texto toma el resto del ancho disponible */
     
-}
-
-.img-column img {
-    height: 120%;
-    /* Altura automática para mantener las proporciones */
-    border-radius: 25px;
 }
 
 .text-column p {
